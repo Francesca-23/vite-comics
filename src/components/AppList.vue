@@ -208,7 +208,7 @@
 
         div{
             img{
-                height: 30rem;
+                height: 25rem;
                 position: absolute;
                 right: 7rem;
                 top: -4rem;

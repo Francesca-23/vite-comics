@@ -51,7 +51,7 @@
     <main>
 
         <div class="content">
-            <p> --Content goes here-- </p>
+            <p> -- Content goes here -- </p>
         </div>
 
         <div class="listIcons">
