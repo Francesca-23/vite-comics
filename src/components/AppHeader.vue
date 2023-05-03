@@ -102,6 +102,10 @@
                 margin: 0 0.5rem;
                 font-size: 0.8rem;
                 padding: 2.5rem 0;
+
+                a{
+                    color: black;
+                }
             }
         }
     }
