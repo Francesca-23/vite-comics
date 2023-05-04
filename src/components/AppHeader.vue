@@ -80,7 +80,7 @@
             <div>
                 <ul>
                     <li v-bind:class="element.active == true ? 'border' : '' " v-for="(element, index) in headerList" :key="index">
-                        <a href="element.path">{{ element.nome }} </a>
+                        <a v-bind:class="element.active == true ? 'color' : '' "  href="element.path">{{ element.nome }} </a>
                     </li>
                 </ul>
             </div>
@@ -107,6 +107,7 @@
 
                 a{
                     color: black;
+                    font-weight: bold;
                 }
             }
         }
@@ -117,7 +118,11 @@
     }
 
     .border{
-        border-bottom: 3px solid #0c7cec;
+        border-bottom: 4px solid #0c7cec;
+    }
+
+    .color{
+        color: #0c7cec;
     }
 
 </style>

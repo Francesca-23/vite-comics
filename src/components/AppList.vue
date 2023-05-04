@@ -178,7 +178,6 @@
     .big-container{
         background-image: url('/images/footer-bg.jpg');
         color: white;
-        height: 22rem;
 
         .container{
             display: flex;
@@ -193,6 +192,7 @@
                 ul{
                     margin-right: 1.5rem;
                     margin-top: 1.2rem;
+                    padding-bottom: 1.2rem;
                 }
             }
     
@@ -206,15 +206,6 @@
             }
         }
 
-        div{
-            img{
-                height: 25rem;
-                position: absolute;
-                right: 7rem;
-                top: -4rem;
-                
-            }
-        }
     }
 
     h3{
