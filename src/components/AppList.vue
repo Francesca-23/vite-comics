@@ -149,7 +149,7 @@
         <div class="container">
     
             <div class="lists-1">
-                <ul v-for="(element, index) in firstLists" :key="firstLists">
+                <ul v-for="(element, index) in firstLists" :key="index">
                     <h3>{{ element.title }}</h3>
                     <li v-for="(element, index) in element.elements">
                         <a href="element.link">{{ element.nome }} </a>
@@ -158,18 +158,14 @@
             </div>
     
             <div class="lists-2">
-                <ul v-for="(element, index) in secondLists" :key="secondLists">
+                <ul v-for="(element, index) in secondLists" :key="index">
                     <h3>{{ element.title }}</h3>
                     <li v-for="(element, index) in element.elements">
                         <a href="element.link">{{ element.nome }} </a>
                     </li>
                 </ul>
             </div>
-    
-        </div>
 
-        <div>
-            <img src="/images/dc-logo-bg.png" alt="logo">
         </div>
 
     </div>
@@ -183,17 +179,20 @@
         background-image: url('/images/footer-bg.jpg');
         color: white;
         height: 22rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        position: relative;
 
         .container{
             display: flex;
+            width: 80%;
+            height: 100%;
+            margin: auto;
+            background-image: url('/images/dc-logo-bg.png');
+            background-position: center right;
+            background-repeat: no-repeat;
     
             .lists-1{
                 ul{
                     margin-right: 1.5rem;
+                    margin-top: 1.2rem;
                 }
             }
     
@@ -202,6 +201,7 @@
     
                 ul{
                     margin: 0 1.5rem;
+                    margin-top: 1.2rem;
                 }
             }
         }

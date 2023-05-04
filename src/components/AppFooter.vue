@@ -30,7 +30,7 @@
 
         <div class="social-media">
             <p><strong>FOLLOW US</strong></p>
-            <div v-for="(element) in socialMedia" :key="socialMedia">             
+            <div v-for="(element, index) in socialMedia" :key="index">             
                 <img v-bind:src="element" alt="icon">
             </div>
         </div>

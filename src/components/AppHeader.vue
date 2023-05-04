@@ -57,10 +57,12 @@
                         path: "/shop",
                         active: false,
                     },
-                ]
+                ],
 
             }
-        }
+
+        },
+
     }
 
 </script>
@@ -77,7 +79,7 @@
 
             <div>
                 <ul>
-                    <li v-for="(element, index) in headerList">
+                    <li v-bind:class="element.active == true ? 'border' : '' " v-for="(element, index) in headerList" :key="index">
                         <a href="element.path">{{ element.nome }} </a>
                     </li>
                 </ul>
@@ -112,6 +114,10 @@
 
     img{
         height: 4rem;
+    }
+
+    .border{
+        border-bottom: 3px solid #0c7cec;
     }
 
 </style>

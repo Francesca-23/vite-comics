@@ -1,7 +1,7 @@
 
 <script>
 
-    import AppList from "../components/AppList.vue"
+    import AppList from "./AppList.vue"
 
     export default{
         name: "AppMain",
@@ -56,7 +56,7 @@
 
         <div class="listIcons">
             <ul>
-                <li v-for="(element, index) in iconsList" :key="iconsList">
+                <li v-for="(element, index) in iconsList" :key="index">
                     <img v-bind:src="element.img" alt="">
                     <a href="element.link">{{ element.nome }} </a>
                 </li>
